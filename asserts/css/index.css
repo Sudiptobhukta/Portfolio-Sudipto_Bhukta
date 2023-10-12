@@ -1,0 +1,58 @@
+.main{
+    text-align: center;
+    font-family: 'Caveat', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Pixelify Sans', sans-serif;
+    background-color: #1A1A1D;
+    color: #db9160;
+    font-size: large;
+}
+
+.experience{
+    display: flex;
+}
+
+.box{
+    display: inline;
+    border: 2px solid black;
+    margin: 5px 10px 0px 0px;
+    width: 50%;  
+}
+
+.first-li{
+    float: left;
+}
+
+.second-li{
+    float: right;
+}
+
+.experience-heading{
+    clear: left;
+}
+
+.inside{
+    padding-left: 0;
+}
+
+
+.heading {
+    margin: 3px 0px 2px 0px;
+   
+    
+}
+
+.company{
+    margin-top: 0;
+}
+
+.heading-name{
+   
+    text-align: left;
+    margin: 10px 0px 0px 10px;
+}
+
+.ul{
+    list-style: none;
+}
+
