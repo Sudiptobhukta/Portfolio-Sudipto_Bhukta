@@ -1,58 +1,120 @@
-.main{
-    text-align: center;
-    font-family: 'Caveat', cursive;
-font-family: 'Libre Baskerville', serif;
-font-family: 'Pixelify Sans', sans-serif;
-    background-color: #1A1A1D;
-    color: #db9160;
-    font-size: large;
-}
-
-.experience{
+body{ 
     display: flex;
-}
-
-.box{
-    display: inline;
-    border: 2px solid black;
-    margin: 5px 10px 0px 0px;
-    width: 50%;  
-}
-
-.first-li{
-    float: left;
-}
-
-.second-li{
-    float: right;
-}
-
-.experience-heading{
-    clear: left;
-}
-
-.inside{
-    padding-left: 0;
-}
-
-
-.heading {
-    margin: 3px 0px 2px 0px;
-   
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    background-color: rgb(1, 86, 120);
+    border-radius: 20px;
     
 }
 
-.company{
-    margin-top: 0;
+.container{
+    display: grid;
+    grid-template-rows:auto;
+    background-color: rgb(90, 227, 227);
+    gap: 30px;
+    font-family: 'Caveat', cursive;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Pixelify Sans', sans-serif;
+    background-color: #1A1A1D;
+    color: #db9160;
+    border-radius: 10px;
+    font-size: larger;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 30px;
+
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+       
 }
 
 .heading-name{
+    text-align: center;
+    font-size: xx-large;
+}
+.image{
+    order:1;
+    text-align: center;
+}
+
+.Summary{
+    order: 2;
    
-    text-align: left;
-    margin: 10px 0px 0px 10px;
+}
+.Summary p{ 
+   width: 50%;
+   color: aliceblue;
+   font-weight:bold;
+   text-align: center;
 }
 
-.ul{
-    list-style: none;
+.education{
+    order: 3;
+}
+.education li{
+    margin-bottom: 5px;
 }
 
+.experience{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-columns: auto;
+    gap: 30px;
+    order: 4;
+    text-align: center;
+   
+}
+.experience .experience-heading{
+    grid-column: span 4;
+} 
+
+ul{
+    list-style-type: none;
+    padding: 0px 4px 0px 4px;
+}
+
+.experience span{
+    color: aqua;
+}
+
+.experience  h6, .experience h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: medium;
+}
+.first-li{
+    grid-column: 2;
+}
+.experience .box{
+    border: 2px solid #db9160 ;
+    border-radius: 15px;
+    text-align: center;
+    /* grid-row: span 2 ; */
+    
+}
+
+
+.skills{
+    display: grid;
+    grid-template-rows: auto;
+    order: 5;  
+    text-align: center;  
+}
+
+.skill-items{
+    display: grid;
+   
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.project{
+
+    order: 6;
+}
